@@ -1,0 +1,61 @@
+*,html{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+font-size:10px;
+background:white;
+font-family:sans-serif;
+color:black;
+}
+a{
+color:currentColor;
+cursor:default;
+text-decoration:none;
+}
+input, button, textarea, select{
+outline-color:inherit;
+outline-style:hidden;
+outline-offset:inherit;
+}
+textarea::-webkit-scrollbar, select::-webkit-scrollbar,
+input::-webkit-scrollbar{
+display:none;
+}
+.separator{
+    position: relative;
+    text-align: center;
+}
+
+.separator label{
+    background-color:transparent;
+    padding:4px;
+    position: relative;
+    border:1px solid black;
+    border-radius:100px;
+    background:#000;
+    font-weight:bolder;
+}
+.separator .btn{
+padding:20px;
+background:green;
+transition:0.5s;
+}
+.separator .btn:hover, .sepa.btn:active {
+background:lightgreen;
+}
+.separator label button {
+all:inherit;
+}
+
+.separator:before{
+    content: '';
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    border-color:black;
+}
